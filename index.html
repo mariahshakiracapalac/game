@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Odd or Even Game</h1>
+        <p>Select a player and a number between 1 and 10, then guess if it's Odd or Even!</p>
+
+        <!-- Player Selection -->
+        <div class="player-selection">
+            <label for="player-select">Choose a player:</label>
+            <select id="player-select">
+                <option value="Player 1">Player 1</option>
+                <option value="Player 2">Player 2</option>
+            </select>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <p><span id="current-player">Player 1</span> Score: <span id="player-score">0</span></p>
+            <p>Enemy Score: <span id="enemy-score">0</span></p>
+        </div>
+
+        <div class="number-selection">
+            <label for="player-number">Choose a number:</label>
+            <select id="player-number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button id="odd-btn">Odd</button>
+            <button id="even-btn">Even</button>
+        </div>
+
+        <div id="result" class="result"></div>
+        <div id="enemy-result" class="enemy-result"></div>
+
+        <button id="play-again" class="hidden">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

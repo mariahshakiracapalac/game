@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0243E0, #66FCF1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.container {
+    text-align: center;
+    background-color: #0B243E;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #66FCF1;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Scoreboard Styles */
+.scoreboard {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.number-selection, .player-selection {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(135deg, #0243E0, #66FCF1);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #004944;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Styles */
+.result, .enemy-result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#play-again {
+    background: linear-gradient(135deg, #66FCF1, #0243E0);
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+}
